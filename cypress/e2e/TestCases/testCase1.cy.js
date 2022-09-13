@@ -1,21 +1,26 @@
-import { includes } from "cypress/types/lodash";
 import loginPage from "../../integration/page/loginpage";
 import loginpage from "../../integration/page/loginpage";
 
 /// <reference types="cypress" />
 context("Assertions", () => {
   beforeEach(() => {
-    cy.visit("https://automation.staging.iam2secz.com");
+    cy.visit("/");
+    //const time = new Date(now).getTime;
+    var time = Date.now();
+    var String,
+      sc = "sdds" + time;
+    //cy.visit("https://automation.staging.iam2secz.com");
     const login = new loginPage();
     login.usernameInput().type("neprofile0");
+    login.usernameInput().type(sc);
     login.passwordInput().type("S3cz377a#");
     login.loginBtn().click();
     cy.url().should("include", "/neprofile_dashboard");
-    cy.get(url).should("include", "/neprofile");
+    //cy.get(url).should("include", "/neprofile");
   });
 
   describe("loginVisitAdmin", () => {
-    it(".should() - make an assertion about the current subject", () => {
+    it.only(".should() - make an assertion about the current subject", () => {
       // https://on.cypress.io/should
 
       cy.get('[href="/neprofile_dashboard/reports"] > li').click();
