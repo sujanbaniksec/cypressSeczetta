@@ -1,5 +1,5 @@
-import loginPage from "../../integration/page/loginpage";
-import loginpage from "../../integration/page/loginpage";
+import loginPage from "../../integration/page/svsvsvs";
+import loginpage from "../../integration/page/svsvsvs";
 
 /// <reference types="cypress" />
 context("Assertions", () => {

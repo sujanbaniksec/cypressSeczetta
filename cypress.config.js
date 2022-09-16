@@ -14,6 +14,7 @@ module.exports = defineConfig({
     autoOpen: true,
     overwrite: false,
   },
+
   e2e: {
     setupNodeEvents(on, config) {
       // implement node event listeners here
@@ -27,7 +28,17 @@ module.exports = defineConfig({
   },
 
   env: {
-    automation_staging_url: "https://automation.staging.iam2secz.com",
-    flipon_staging_url: "https://flipperon.staging.iam2secz.com",
+    automation_staging_url: {
+      baseUrl: "https://automation.staging.iam2secz.com",
+      token: "ijdfhbS",
+    },
+
+    flipon_staging_url: {
+      url: "https://flipperon.staging.iam2secz.com",
+      token: "jdssdf",
+    },
+    url: "",
+    token: "",
+    profile_type_id: "",
   },
 });
