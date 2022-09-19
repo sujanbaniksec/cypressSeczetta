@@ -5,14 +5,13 @@
   "main": "index.js",
   "scripts": {
     "runner": "cypress open",
-    "html-report" : "cypress run --spec cypress/e2e/TestCases/pocTestCaseOne.cy.js --browser chrome --headed",
-    "Staging":"cypress run --config baseUrl=https://flipperon.staging.iam2secz.com/ --spec cypress/e2e/TestCases/pocTestCaseOne.cy.js --browser chrome --headed",
-    "dev":"cypress run --env --config dev --spec cypress/e2e/TestCases/pocTestCaseOne.cy.js --browser chrome --headed",
+    "html-report": "cypress run --spec cypress/e2e/TestCases/pocTestCaseOne.cy.js --browser chrome --headed",
+    "Staging": "cypress run --config baseUrl=https://flipperon.staging.iam2secz.com/ --spec cypress/e2e/TestCases/pocTestCaseOne.cy.js --browser chrome --headed",
+    "dev": "cypress run --env --config dev --spec cypress/e2e/TestCases/pocTestCaseOne.cy.js --browser chrome --headed",
     "cy:run:dev": "cypress run --env configFile=development --spec cypress/e2e/TestCases/pocTestCaseOne.cy.js --browser chrome --headed",
-    "flipon":"cypress run --env url=https://flipperon.staging.iam2secz.com/,token='xcvx'  --spec cypress/e2e/TestCases/pocTestCaseOne.cy.js --browser chrome --headed",
-    "automationDev":"cypress run --env url=https://automation.dev.iam2secz.com/,token=53518ad80f264b57b52a0722741cfda4,profile_type_id=5c4d57ea-fbaf-4451-9248-ff6fa412f605  --spec cypress/e2e/TestCases/createProfileViaApi.cy.js --browser chrome --headed",
-    "automationDev2":"cypress run --env url=https://automation.dev.iam2secz.com/,token=53518ad80f264b57b52a0722741cfda4,profile_type_id=5c4d57ea-fbaf-4451-9248-ff6fa412f605  --spec cypress/e2e/TestCases/pocTestCaseTwoInOne.cy.js --browser chrome --headed"
-    
+    "flipon": "cypress run --env url=https://flipperon.staging.iam2secz.com/,token='xcvx'  --spec cypress/e2e/TestCases/pocTestCaseOne.cy.js --browser chrome --headed",
+    "automationDev": "cypress run --env url=https://automation.dev.iam2secz.com/,token=53518ad80f264b57b52a0722741cfda4,profile_type_id=5c4d57ea-fbaf-4451-9248-ff6fa412f605  --spec cypress/e2e/TestCases/createProfileViaApi.cy.js --browser chrome --headed",
+    "automationDev2": "cypress run --env url=https://automation.dev.iam2secz.com/,token=53518ad80f264b57b52a0722741cfda4,profile_type_id=5c4d57ea-fbaf-4451-9248-ff6fa412f605  --spec cypress/e2e/TestCases/pocTestCaseTwoInOne.cy.js --browser chrome --headed"
   },
   "keywords": [],
   "author": "",
@@ -21,6 +20,7 @@
     "chai": "^4.3.6",
     "cypress": "^10.8.0",
     "cypress-email-results": "^1.8.0",
+    "cypress-iframe": "^1.0.1",
     "cypress-mochawesome-reporter": "^3.2.2",
     "cypress-multi-reporters": "^1.6.1",
     "cypress-xpath": "^2.0.1",

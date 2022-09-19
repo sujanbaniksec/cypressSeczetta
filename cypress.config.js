@@ -4,6 +4,11 @@ module.exports = defineConfig({
   defaultCommandTimeout: 30000,
   retries: { openMode: 2, runMode: 2 },
   video: false,
+
+  experimentalWebKitSupport: true,
+
+  chromeWebSecurity: false,
+  experimentalModifyObstructiveThirdPartyCode: true,
   reporter: "cypress-mochawesome-reporter",
   reporterOptions: {
     charts: true,
@@ -40,5 +45,8 @@ module.exports = defineConfig({
     url: "",
     token: "",
     profile_type_id: "",
+    experimentalSessionAndOrigin: true,
+    experimentalModifyObstructiveThirdPartyCode: true,
+    chromeWebSecurity: false,
   },
 });
