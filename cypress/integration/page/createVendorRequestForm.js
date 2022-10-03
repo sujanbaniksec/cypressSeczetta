@@ -36,6 +36,9 @@ class createVendorRequestForm {
   vendorStateIsAK() {
     return cy.xpath("//li[text()='AK']");
   }
+  vendorUploadFile() {
+    return cy.get("input[type=file]");
+  }
   //file button for attachment
   //text Input for Vendor Zip Code
   submit() {
@@ -76,6 +79,7 @@ class createVendorRequestForm {
     let vendorZipCode = "vendorZipCode" + unique;
     this.vendorZipCode().type(vendorZipCode);
     vendorInfo.set("vendorZipCode", vendorZipCode);
+    this.vendorUploadFile().selectFile("cypress/fixtures/test1.png");
     //Set Vendor State
 
     this.vendorState().click();

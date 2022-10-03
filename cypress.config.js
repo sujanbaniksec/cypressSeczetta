@@ -5,10 +5,6 @@ module.exports = defineConfig({
   retries: { openMode: 2, runMode: 2 },
   video: false,
 
-  experimentalWebKitSupport: true,
-
-  chromeWebSecurity: false,
-  experimentalModifyObstructiveThirdPartyCode: true,
   reporter: "cypress-mochawesome-reporter",
   reporterOptions: {
     charts: true,
@@ -30,6 +26,9 @@ module.exports = defineConfig({
       "**/cypress/e2e/2-advanced-examples",
     ],
     baseUrl: "https://automation.staging.iam2secz.com",
+    experimentalSessionAndOrigin: true,
+    experimentalModifyObstructiveThirdPartyCode: true,
+    chromeWebSecurity: false,
   },
 
   env: {
@@ -45,8 +44,5 @@ module.exports = defineConfig({
     url: "",
     token: "",
     profile_type_id: "",
-    experimentalSessionAndOrigin: true,
-    experimentalModifyObstructiveThirdPartyCode: true,
-    chromeWebSecurity: false,
   },
 });

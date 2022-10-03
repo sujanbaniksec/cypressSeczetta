@@ -27,4 +27,17 @@ describe("Run Cypress in iframe webApp", () => {
       getBody().find("#column-button-flavor").should("be.visible").click();
     });
   });
+
+  it("Run Cypress in iframe multisource", () => {
+    cy.visit("https://iframetester.com/?url=https://bing.com");
+    cy.frameLoaded("#iframe-window");
+
+    cy.enter("#iframe-window").then((getBody) => {
+      // getBody()
+      // .find('a[title="Rechercher sur Wikipédia [alt-shift-f]"]')
+      // .should("be.visible")
+      // .click();
+      getBody().find("input[name='q']").clear().type("Seczetta.inc{enter}");
+    });
+  });
 });
