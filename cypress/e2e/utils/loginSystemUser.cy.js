@@ -1,5 +1,5 @@
 //import loginPage from '../page/loginPage.js'
-import loginPage from "../../integration/page/loginpage";
+import loginPage from "../../integration/page/svsvsvs";
 //import dashboardPage from '../pages/dashboardPage.js'
 const login = new loginPage();
 //const dashboard = new dashboardPage();
