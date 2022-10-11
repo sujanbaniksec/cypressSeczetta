@@ -41,7 +41,7 @@ module.exports = defineConfig({
       url: "https://flipperon.staging.iam2secz.com",
       token: "jdssdf",
     },
-    url: "",
+    url: "https://automation.staging.iam2secz.com",
     token: "",
     profile_type_id: "",
   },

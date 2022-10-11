@@ -30,7 +30,10 @@ context("profileTestCases", () => {
       dashboard.advancedSearchProfileName().type(vendorInfo.get("vendorName"));
       //uses dynamic xpath to click the Vendor Name in the advanced search dropdown
       dashboard.dynamic(vendorInfo.get("vendorName")).click();
-      expect(dashboard.dynamic(vendorInfo.get("vendorCity"))).to.exist;
+      vendorInfo.forEach(function (key, val) {
+        expect(dashboard.dynamic(key)).to.exist;
+      });
+      //expect(dashboard.dynamic(vendorInfo.get("vendorCity"))).to.exist;
       /*
     for (let value of vendorInfo.values()){
       expect(dashboard.dynamic(vendorInfo.get(vendorInfo.values))).to.exist

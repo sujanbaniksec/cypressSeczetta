@@ -11,7 +11,8 @@
     "cy:run:dev": "cypress run --env configFile=development --spec cypress/e2e/TestCases/pocTestCaseOne.cy.js --browser chrome --headed",
     "flipon": "cypress run --env url=https://flipperon.staging.iam2secz.com/,token='xcvx'  --spec cypress/e2e/TestCases/pocTestCaseOne.cy.js --browser chrome --headed",
     "automationDev": "cypress run --env url=https://automation.dev.iam2secz.com/,token=53518ad80f264b57b52a0722741cfda4,profile_type_id=5c4d57ea-fbaf-4451-9248-ff6fa412f605  --spec cypress/e2e/TestCases/createProfileViaApi.cy.js --browser chrome --headed",
-    "automationDev2": "cypress run --env url=https://automation.dev.iam2secz.com/,token=53518ad80f264b57b52a0722741cfda4,profile_type_id=5c4d57ea-fbaf-4451-9248-ff6fa412f605  --spec cypress/e2e/TestCases/pocTestCaseTwoInOne.cy.js --browser chrome --headed"
+    "automationDev2": "cypress run --env url=https://automation.dev.iam2secz.com/,token=53518ad80f264b57b52a0722741cfda4,profile_type_id=5c4d57ea-fbaf-4451-9248-ff6fa412f605  --spec cypress/e2e/TestCases/pocTestCaseTwoInOne.cy.js --browser chrome --headed",
+    "automationStaging": "cypress run --env url=https://automation.staging.iam2secz.com/,token=53518ad80f264b57b52a0722741cfda4,profile_type_id=5c4d57ea-fbaf-4451-9248-ff6fa412f605  --spec cypress/e2e/TestCases/profileE2ETestCases.cy.js --browser chrome --headed"
   },
   "keywords": [],
   "author": "",
