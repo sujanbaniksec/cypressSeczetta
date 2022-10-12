@@ -35,8 +35,14 @@ class dashboardPage {
   searchProfileName() {
     return cy.xpath("//input[@name='search']");
   }
+  dynamicSearchName(searchName) {
+    return cy.xpath(`//input[@name="${searchName}"]`);
+  }
   firstRow() {
     return cy.xpath("//table[@id='react-table']/tbody/tr/td[3]");
+  }
+  textContains(Text1) {
+    return cy.xpath(`//*[contains(text(),"${Text1}")])[1]`);
   }
 
   logOut() {
