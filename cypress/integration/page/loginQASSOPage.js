@@ -67,5 +67,8 @@ class loginQASSOPage {
       //cy.get("#idBtn_Back").click();
     });
   }
+  logOut() {
+    return cy.xpath("//*[contains(text(),'log out')]");
+  }
 }
 export default loginQASSOPage;

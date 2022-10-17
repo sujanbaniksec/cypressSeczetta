@@ -2,9 +2,7 @@
 //Import of pages
 import dashboardPage from "../../integration/page/dashboardPage";
 import createProfileE2EPage from "../../integration/page/createProfileE2EPage";
-
 import loginQASSOPage from "../../integration/page/loginQASSOPage";
-
 //Assertion library
 import { expect } from "chai";
 
