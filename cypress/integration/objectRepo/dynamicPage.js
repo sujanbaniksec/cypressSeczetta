@@ -1,6 +1,8 @@
 class dynamicPage {
   liNormalizeText(name) {
-    return cy.xpath(`//li/text()[normalize-space(.)= '${name}']/parent::*`);
+    return cy.xpath(
+      `(//li/text()[normalize-space(.)= '${name}']/parent::*)[1]`
+    );
   }
   normalizeText(name) {
     return cy.xpath(`//*/text()[normalize-space(.)= '${name}']/parent::*`);
