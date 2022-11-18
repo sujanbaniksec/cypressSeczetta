@@ -31,3 +31,6 @@ Cypress.Commands.add("switchToIframe", (iframe) => {
     .should("be.visible")
     .then(cy.wrap);
 });
+Cypress.Commands.add("placeholder", (selector) => {
+  return cy.get(`[placeholder="${selector}"]`);
+});
