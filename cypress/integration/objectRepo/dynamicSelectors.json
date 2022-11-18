@@ -1,4 +1,0 @@
-{
-    "needAction":".nav-list > [href='/neprofile_dashboard/actions'] > li" ,
-    "requests":"[href='/neprofile_dashboard/requests'] > li"
-}
